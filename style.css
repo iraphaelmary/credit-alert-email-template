@@ -47,10 +47,6 @@ p {
     padding: 0 2rem;
 }
 
-.container {
-    width: 100%;
-}
-
 header {
     width: 100%;
     background: url('./assets/BlueBackground.png');
@@ -82,7 +78,7 @@ main section p {
 }
 
 aside {
-    padding: 2rem 0;
+    padding: 2rem 0 9rem 0;
 }
 
 main span {
@@ -119,7 +115,7 @@ article p {
 
 footer {
     width: 100%;
-    background: url('./assets/BlueBackground.png');
+    background-image: url('./assets/BlueBackground.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,12 +127,11 @@ footer {
 
 footer section {
     width: 80%;
-    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(255, 255, 255, 0.15);
-    padding: 2rem 4rem;
+    padding: 3rem 4rem;
     border-radius: 5px;
     flex-wrap: wrap;
 }
@@ -144,6 +139,8 @@ footer section {
 footer section div:nth-child(1){
     text-align: center;
 }
+
+
 
 @media screen and (max-width: 920px) {
     .wrapper {
@@ -176,6 +173,10 @@ footer section div:nth-child(1){
         font-size: 0.85rem;
         padding: .2rem 0rem;
     }
+
+    aside {
+        padding: 2rem 0 4rem 0;
+    }
     
     main span {
         width: 10rem;
@@ -191,12 +192,13 @@ footer section div:nth-child(1){
 
     footer {
         width: 100%;
+        padding: 4rem 1rem;
     }
 
     footer section {
         width: 100%;
         justify-content: center;
-        padding: .4rem;
+        padding: 1rem;
     }
 
     footer section div:nth-child(1){
@@ -204,4 +206,23 @@ footer section div:nth-child(1){
         text-align: center;
     }
     
+}
+
+@media screen and (max-width: 320px){
+    
+    article p {
+        width: 100%;
+    }
+
+    footer {
+        padding: 4rem 0rem;
+    }
+
+    footer section {
+        padding: .5rem;
+    }
+
+    footer section div:nth-child(2) img {
+        width: 140px;
+    }
 }
